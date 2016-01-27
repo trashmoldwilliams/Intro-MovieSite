@@ -5,9 +5,64 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>title</title>
+    <title>Ticket Cost</title>
   </head>
   <body>
+    <section class="banner">
+      <div class="container">
+        <h1>Ticket Cost</h1>
 
+      </div>
+    </section>
+    <section class="movie-options">
+      <div class="container">
+        <h1>Movies</h1>
+        <label>How old are you?</label>
+        <input id="ageInput" type="number"></input>
+        <button id="ageSubmit" type="button">Submit</button>
+
+        <div id="movieSelection">
+          <form id="movieList">
+
+          </form>
+        </div>
+
+        <div id="detailsInput">
+          <form id="detailsForm">
+            <div class="form-group">
+              <label>Showtimes</label>
+              <select id="showTimeSelector" class="form-control">
+                <option value="true">12:00 PM (Matinee)</option>
+                <option value="false">3:00 PM</option>
+                <option value="false">6:00 PM</option>
+                <option value="false">9:00 PM</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>3D</label>
+              <select id="threeDSelector" class="form-control">
+                <option value="true">3D</option>
+                <option value="false">No 3D</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>IMAX</label>
+              <select id="imaxSelector" class="form-control">
+                <option value="true">IMAX</option>
+                <option value="false">No IMAX</option>
+              </select>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="price-sheet">
+      <div class="container">
+        <div id="priceResult">
+          <span>Ticket Price: </span><span id="priceOutput"></span>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
